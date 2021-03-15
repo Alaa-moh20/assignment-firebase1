@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="Enter your data"
+        android:textColor="#000"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <EditText
+        android:id="@+id/userName"
+        android:layout_width="265dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:background="#fafafa"
+        android:elevation="3dp"
+        android:paddingStart="5dp"
+        android:ems="10"
+        android:hint="Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/userID"
+        android:layout_width="265dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="#fafafa"
+        android:elevation="3dp"
+        android:paddingStart="5dp"
+        android:ems="10"
+        android:hint="ID"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userName" />
+
+    <EditText
+        android:id="@+id/userAddress"
+        android:layout_width="265dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="#fafafa"
+        android:elevation="3dp"
+        android:paddingStart="5dp"
+        android:ems="10"
+        android:hint="Address"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userID"
+        />
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:elevation="3dp"
+        android:background="@color/colorPrimary"
+        android:text="Add user"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userAddress" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
